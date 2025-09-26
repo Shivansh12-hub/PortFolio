@@ -1,0 +1,314 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+.box, .skill-box, .academic-box {
+  background-color: #e9f0f7;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.page {
+  width: 90%;
+  max-width: 1700px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.logo {
+  font-size: 70px;
+  font-weight: 700;
+  color: #3679e6;
+  margin-left: 5%;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #333;
+  font-size: 25px;
+  transition: 0.2s;
+}
+
+.menu a:hover {
+  color: #3679e6;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin-left: 10%;
+  flex-wrap: wrap;
+}
+
+.left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.helo {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.name {
+  font-size: 48px;
+  margin: 6px 0;
+  font-weight: 800;
+  color: #07203a;
+}
+
+.role {
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 50px;
+  color: #3679e6;
+}
+
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.skill-page {
+  width: 90%;
+  max-width: 1700px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.skill-logo {
+  font-size: 70px;
+  font-weight: 700;
+  color: #3679e6;
+  margin-left: 5%;
+}
+
+.skill-menu {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.skill-menu a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #333;
+  font-size: 25px;
+  transition: 0.2s;
+}
+
+.skill-menu a:hover {
+  color: #3679e6;
+}
+
+.skill-content {
+  width: 90%;
+  margin: 30px auto;
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+.skill-photo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.skill-photo img {
+  width: 180px;
+  border-radius: 8px;
+}
+
+.academic-page {
+  width: 90%;
+  max-width: 1700px;
+  background: #fff;
+  border-radius: 16px;
+}
+
+.academic-flow {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.academic-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.academic-logo {
+  font-size: 65px;
+  font-weight: 700;
+  color: #3679e6;
+  margin-left: 5%;
+}
+
+.academic-menu {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.academic-menu a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #333;
+  font-size: 25px;
+  transition: 0.2s;
+}
+
+.academic-menu a:hover {
+  color: #3679e6;
+}
+
+.academic-edu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+  margin: 40px auto;
+  border-left: 3px solid #3679e6;
+  padding-left: 30px;
+}
+
+.academic-coll {
+  margin-left: 0;
+}
+
+.academic-aced {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  background: #f5f7ff;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease-in-out;
+}
+
+.academic-aced:hover {
+  transform: scale(1.05);
+}
+
+.academic-coll img {
+  height: 160px;
+}
+
+.academic-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.academic-result {
+  font-size: 18px;
+  color: #07203a;
+}
+
+@media (max-width: 900px) {
+  .main, .skill-photo, .academic-edu {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .logo, .skill-logo, .academic-logo {
+    font-size: 30px;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .menu, .skill-menu, .academic-menu {
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  .name {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .role {
+    font-size: 18px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .profile-img {
+    max-width: 150px;
+  }
+
+  .skill-photo img {
+    width: 140px;
+  }
+
+  .academic-coll {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .academic-aced {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .academic-coll img {
+    margin-bottom: 10px;
+  }
+}
