@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "Fvy6XfoyvndIXDuLp",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="box">
+        <header class="page">
+            <nav class="nav">
+                <div class="logo">Shivansh</div>
+                <ul class="menu">
+                    <a href="index.html">Home</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="academic.html">Academics</a>
+                    <a href="about_me.html">About me</a>
+                    <a href="contact.html">Contact</a>
+                </ul>
+            </nav>
+            </nav>
+      <div id="underline">
+      </div>
+
+            <section id="contact" class="contact-box">
+                <h2 class="contact-title">Get In Touch</h2>
+                <form class="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" id="contact-name" required />
+                    <input type="email" name="email" placeholder="Your Email" id="contact-email" required />
+                    <textarea name="message" rows="5" placeholder="Your Message" id="contact-message"
+                        required></textarea>
+                    <button type="button" id="contact-button" onclick="sendmail()">Send Message</button>
+                </form>
+            </section>
+            <div class="social-links">
+        <a href="https://www.instagram.com/_mr.shivansh__?igsh=MTY0eXJjdDB2cmQ5Zw==" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+        </a>
+        <a href="https://www.linkedin.com/in/shivansh-kumar-781668319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+        </a>
+        <a href="https://leetcode.com/u/Shivansh_11Kumar/" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode">
+        </a>
+      </div>
+        </header>
+    </div>
+</body>
+
+</html>
